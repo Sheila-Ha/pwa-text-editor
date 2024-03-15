@@ -9,16 +9,33 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = () => {
   return {
     mode: 'development',
+    // Entry pont for files
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    // Output for bundles
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      // Webpack that generates our html file and injects our bundles
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'J.A.T.E'
+      }),
+      // Injects our custom service worker
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
       
+      // Creates a manifest.json file
+      new WebpackPwaManifest({
+        inject: true,
+
+      })
     ],
 
     module: {
