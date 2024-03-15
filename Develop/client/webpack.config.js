@@ -33,10 +33,11 @@ module.exports = () => {
 
       // Creates a manifest.json file
       new WebpackPwaManifest({
+        fingerprints: false,
         inject: true,
         name: "Just Another Text Editor",
         short_name: "J.A.T.E",
-        description: "Takes notes while being in your browser",
+        description: "Offline Text Editor",
         background_color: "#225ca3",
         theme_color: "#225ca3",
         start_url: "/",
@@ -56,19 +57,23 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          use. ['style-loader', 'css-loader'],
+          use: ["style-loader", "css-loader"],
         },
-        {test: /\.m?js$/,
-      exclude: /node_modules/,
-    // We use babel-loader in order to use ES6
-  use : {
-    loader: 'babel-loader',
-    options: {
-      presets: ['@bable/preset-env'],
-      plugins: ['@bable/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-    },
-  },
-},
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          // We use babel-loader in order to use ES6
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@bable/preset-env"],
+              plugins: [
+                "@bable/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
+        },
       ],
     },
   };
