@@ -1,8 +1,8 @@
 # Text Editor Starter Code  <!-- omit from toc -->
 by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)  
- ![alt text](images/Logo.png)
+ *** LOGO
 ## Description <!-- omit from toc -->
-MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. I have built an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.  
+  This is a text editor app that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
 ## Table of Contents <!-- omit from toc -->
   
@@ -118,9 +118,7 @@ Insomnia - testing will be done using Insomnia
 [Shields](https://shields.io/)  
 [Sequelize](https://sequelize.org/docs/v6/getting-started/)  
 [YouTube](https://youtube.com)  
-[Insomnia](https://insomnia.rest)  
-[MongoDB](https://www.mongodb.com/docs/compass/current/connect/)  
-[Mongoose](https://mongoosejs.com/docs/guide.html)
+[Coding Bootcamp](https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide)  
 
 ## Questions
 ![Ask me anything](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
