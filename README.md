@@ -20,8 +20,9 @@ by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue
 
 ## Installation
 - Clone the repository to get your starter code  
-- Install the source code
-  - npm start  
+- Install the source code  
+- npm install  
+- npm start  
 - Navigate to localhost:3001  
 - Click the install button  
   
