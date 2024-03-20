@@ -20,11 +20,12 @@ module.exports = () => {
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
-      // Webpack that generates our html file and injects our bundles
+      // Webpack plugin that generates our html file and injects our bundles
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "J.A.T.E",
+        title: "J.A.T.E.",
       }),
+
       // Injects our custom service worker
       new InjectManifest({
         swSrc: "./src-sw.js",
@@ -40,11 +41,11 @@ module.exports = () => {
         description: "Offline Text Editor",
         background_color: "#225ca3",
         theme_color: "#225ca3",
-        start_url: "/",
-        publicPath: "/",
+        start_url: "./",
+        publicPath: "./",
         icons: [
           {
-            src: path.resolve("src/image/logo.png"),
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
@@ -53,7 +54,7 @@ module.exports = () => {
     ],
 
     module: {
-      // CSS loader
+      // CSS loaders
       rules: [
         {
           test: /\.css$/i,
@@ -66,9 +67,9 @@ module.exports = () => {
           use: {
             loader: "babel-loader",
             options: {
-              presets: ["@bable/preset-env"],
+              presets: ["@babel/preset-env"],
               plugins: [
-                "@bable/plugin-proposal-object-rest-spread",
+                "@babel/plugin-proposal-object-rest-spread",
                 "@babel/transform-runtime",
               ],
             },
