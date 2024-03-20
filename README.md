@@ -23,7 +23,7 @@ by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue
 - Install the source code  
 - npm install  
 - npm start  
-- Navigate to localhost:3001  
+- Navigate to localhost:3000  
 - Click the install button  
   
 ### User Story  
