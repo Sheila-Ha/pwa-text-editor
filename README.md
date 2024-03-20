@@ -1,6 +1,6 @@
 # PWA Text Editor <!-- omit from toc -->
 by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)  
-![alt text](Develop/client/src/images/logo.png)
+![alt text](client/src/images/resized_logo.png)
 ## Description <!-- omit from toc -->
   This is a text editor app that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
@@ -42,7 +42,7 @@ by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue
 
     WHEN I run the text editor application from my terminal  
     THEN I find that my JavaScript files have been bundled using webpack  
-    
+  
     WHEN I run my webpack plugins  
     THEN I find that I have a generated HTML file, service worker, and a manifest file  
 
@@ -74,7 +74,10 @@ by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue
 ## Usage  
   - Once you have installed and run through local host, it is as easy as entering the text you would like. It will be saved locally by IndexedDB.  
 
-  ** ADD IMAGE
+  - Web View  
+    ![alt text](client/src/images/Web_View.png)  
+  - Installed View  
+    ![alt text](<client/src/images/installed view.png>)
   
 ### Testing  
 - Since a large portion of the code was provided, testing was done through localhost through the src-sw.js and webpack.config.js files.
