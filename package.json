@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "npm run build && cd server && node server.js",
+    "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
-    "build": "cd server && npm i && cd ../client && npm i && npm run build",
+    "build": "cd client && npm run build",
     "prebuild": "cd client && rm -rf dist",
     "install": "cd server && npm i && cd ../client && npm i",
+    "postinstall": "npm run build",
     "client": "cd client && npm start"
   },
   "keywords": [],
