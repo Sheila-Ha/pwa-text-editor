@@ -83,7 +83,7 @@ by Sheila Hanson ![Github license](https://img.shields.io/badge/license-MIT-blue
 - Since a large portion of the code was provided, testing was done through localhost through the src-sw.js and webpack.config.js files.
 
 ## Challenges  
- 
+- I had a difficult time deploying with Render but persevered with the help of the TA
 
 
 ## Contributing
@@ -105,7 +105,7 @@ If you have any questions, or additional feedback, please feel free to email me 
 * Github -
 [pwa-text-editor](https://github.com/Sheila-Ha/pwa-text-editor)
 
-* [Deployed to Render](ADD_LINK_HERE)
+* [Deployed to Render](https://pwa-text-editor-x9l8.onrender.com)
 
 * Email -
 slhanson11@live.com
